@@ -315,6 +315,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0630;
+				TargetAttributes = {
+					BE1FA71807AF4C44004B6283 = {
+						DevelopmentTeam = D9BR8NFB7H;
+						ProvisioningStyle = Automatic;
+					};
+				};
 			};
 			buildConfigurationList = 00B7E3B6097EB73D00826121 /* Build configuration list for PBXProject "SDL_image" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -508,7 +514,10 @@
 		007288120F0DA5BA00C302A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D9BR8NFB7H;
 				DYLIB_COMPATIBILITY_VERSION = 3.0.0;
 				DYLIB_CURRENT_VERSION = 7.0.0;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -524,6 +533,7 @@
 					"-weak_framework",
 					webp,
 				);
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Debug;
@@ -558,6 +568,7 @@
 					"~/Library/Frameworks/SDL.framework/Headers",
 				);
 				LIBRARY_STYLE = STATIC;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LIBTOOL_FLAGS = "";
 				OTHER_REZFLAGS = "";
@@ -633,7 +644,10 @@
 		007288160F0DA5C400C302A9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = D9BR8NFB7H;
 				DYLIB_COMPATIBILITY_VERSION = 3.0.0;
 				DYLIB_CURRENT_VERSION = 7.0.0;
 				FRAMEWORK_SEARCH_PATHS = (
@@ -649,6 +663,7 @@
 					"-weak_framework",
 					webp,
 				);
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				WRAPPER_EXTENSION = framework;
 			};
 			name = Release;
@@ -681,6 +696,7 @@
 					"~/Library/Frameworks/SDL.framework/Headers",
 				);
 				LIBRARY_STYLE = STATIC;
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
 				OTHER_CFLAGS = "";
 				OTHER_LIBTOOL_FLAGS = "";
 				OTHER_REZFLAGS = "";
